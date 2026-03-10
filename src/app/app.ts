@@ -9,6 +9,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   title = 'my-app';
-  fullname='duc luong zz'
+  fullname='van ban ctes1tg'
   age='20'
+  sayhello(){
+    alert('hahaha')
+  }
 }
