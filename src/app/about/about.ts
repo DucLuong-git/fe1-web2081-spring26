@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
-export class About {}
+export class About {
+  title = 'my-app';
+  fullname='Duc Luong'
+  age='20'
+  sayhello(){
+    alert('xin chao')
+  }
+}
