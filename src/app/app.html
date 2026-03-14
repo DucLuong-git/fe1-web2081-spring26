@@ -9,6 +9,7 @@
       <a routerLink="/about" class="hover:text-gray-200">About</a>
       <a routerLink="/contact" class="hover:text-gray-200">Contact</a>
       <a routerLink="/products" class="hover:text-gray-200">Product</a>
+      <a routerLink="/stories">stories</a>
     </div>
 
     <div class="hidden md:flex items-center space-x-6">
@@ -19,13 +20,7 @@
 </nav>
 
 <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
-  <h1 class="text-4xl font-bold mb-4 text-[#EE4335] ">xin chào angular Tôi đang học Angular Framework</h1>
-  <h2 class="text-3xl font-bold mb-4 text-[#EE4335] "> tên toii la: {{fullname}}</h2>
-  <h2 class="text-3xl font-bold mb-4 text-[#EE4335] "> tuổi: {{age}}</h2>
   
-  <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700" (click)="sayhello()">
-    click mee
-  </button>
   
   <div class="mt-8 text-left">
     <router-outlet></router-outlet>
