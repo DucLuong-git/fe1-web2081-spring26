@@ -1,0 +1,119 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+
+    <form [formGroup]="addForm" (ngSubmit)="submitForm()"
+        class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm space-y-4">
+
+        <h2 class="text-xl font-semibold text-center">
+            Thêm người nổi tiếng
+        </h2>
+        <div>
+            <label class="block mb-1 text-sm">Tên</label>
+            <input type="text" formControlName="title"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tên" />
+        </div>
+
+        <div>
+            <label class="block mb-1 text-sm">Tuổi</label>
+            <input type="number" formControlName="age"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tuổi" />
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">Độ hot</label>
+            <input type="text" formControlName="hot"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Ví dụ: 100k" />
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            Thêm
+        </button>
+    </form>
+    <form [formGroup]="addProduct" (ngSubmit)="submitProduct()"
+        class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm space-y-4">
+        <h2 class="text-xl font-semibold text-center">
+            Thêm product
+        </h2>
+        <div>
+            <label class="block mb-1 text-sm">Tên sp</label>
+            <input type="text" formControlName="name"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tên product" />
+                @if ( name?.invalid) {
+                    @if (name?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+
+        <div>
+            <label class="block mb-1 text-sm">price</label>
+            <input type="number" formControlName="price"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập price" />
+                @if (price?.invalid) {
+                    @if (price?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">category</label>
+            <input type="text" formControlName="category"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="category" />
+                @if ( category?.invalid) {
+                    @if (category?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            Thêm
+        </button>
+    </form>
+    <form [formGroup]="addUser" (ngSubmit)="submitUser()"
+        class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm space-y-4">
+        <h2 class="text-xl font-semibold text-center">
+            đăng ký tài khoản
+        </h2>
+        <div>
+            <label class="block mb-1 text-sm">Tên</label>
+            <input type="text" formControlName="username"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tên" />
+                @if (username?.invalid) {
+                    @if (username?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+
+        <div>
+            <label class="block mb-1 text-sm">email</label>
+            <input type="text" formControlName="email"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập email" />
+                @if ( email?.invalid) {
+                    @if (email?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">password</label>
+            <input type="text" formControlName="password"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="nhập password" />
+                @if ( password?.invalid) {
+                    @if (password?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            Thêm
+        </button>
+    </form>
+
+</div>

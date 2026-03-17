@@ -8,7 +8,7 @@
   padding: 20px 0;
 }
 .rainbow-text{
-  animation: colorChange 3s infinite;
+  animation: colorChange 2s infinite;
 }
 
 @keyframes colorChange{
