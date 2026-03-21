@@ -3,7 +3,7 @@ import { Home } from './home/home';
 import { About } from './about/about';
 import { Contact } from './pages/contact/ContactComponent';
 import { Products } from './pages/products/ProductsComponent';
-import { Stories } from './pages/stories/StoriesComponent';
+import { ViewStory } from './view-story/view-story';
 import { AddStory } from './pages/add-story/add-story';
 
 export const routes: Routes = [
@@ -11,6 +11,6 @@ export const routes: Routes = [
   { path: 'about', component: About },
   { path: 'contact', component: Contact }, 
   { path: 'products', component: Products },
-  { path: 'stories', component: Stories },
+  { path: 'stories', component: ViewStory },
   { path: 'AddStory', component: AddStory },
 ];

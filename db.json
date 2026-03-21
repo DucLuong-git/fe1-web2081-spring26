@@ -1,92 +1,20 @@
 {
   "stories": [
     {
-      "id": 1,
-      "name": "user2",
-      "price": "12334",
-      "category": "sp 12"
-    },
-    {
-      "id": 2,
-      "name": "user",
-      "price": "12334",
-      "category": "sp 1"
-    },
-    {
-      "username": "",
-      "email": "",
-      "password": "",
-      "id": 3
-    },
-    {
-      "name": "hahahaha",
-      "price": 123,
-      "category": "hahahah",
-      "id": 4
-    },
-    {
-      "name": "hhahahah",
-      "price": 123455,
-      "category": "aaaaaaa",
-      "author": "hai ba",
-      "views": 2,
-      "id": 5
-    },
-    {
-      "name": "hhahahah",
-      "price": 123455,
-      "category": "aaaaaaa",
-      "author": "hai ba",
-      "views": 2,
-      "id": 6
-    },
-    {
-      "name": "ban",
-      "price": 12,
-      "category": "hahahah",
-      "author": "hahah",
-      "views": 2,
-      "id": 7
-    },
-    {
-      "name": "ban",
-      "price": 12,
-      "category": "hahahah",
-      "author": "hahah",
-      "views": 2,
-      "id": 8
-    },
-    {
-      "name": "ok",
-      "price": 12,
-      "category": "111hahah",
-      "author": "hahaha",
-      "views": 3,
-      "id": 9
-    },
-    {
-      "name": "ahahahha",
-      "price": 234,
-      "category": "12",
-      "author": "ssdfff",
-      "views": 2,
-      "id": 10
-    },
-    {
-      "name": "ahahahha",
-      "price": 133,
-      "category": "đsa",
-      "author": "2334",
-      "views": 12,
-      "id": 11
-    },
-    {
       "name": "hahahahah",
       "price": 12,
       "category": "kakakakak",
       "author": "ahhaahah",
       "views": 3,
       "id": 12
+    },
+    {
+      "name": "onae pe",
+      "price": 199999,
+      "category": "hahahahah",
+      "author": "hahahahah",
+      "views": 9999999,
+      "id": 14
     }
   ]
 }
