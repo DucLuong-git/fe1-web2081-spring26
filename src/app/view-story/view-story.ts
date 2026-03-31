@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from "@angular/router";
 interface Story {
   id: number;
   name: string;
@@ -11,7 +12,7 @@ interface Story {
 }
 @Component({
   selector: 'app-view-story',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './view-story.html',
   styleUrl: './view-story.css',
 })

@@ -30,6 +30,7 @@ export class AddStory {
       category: ['', [Validators.required]],
       author: ['', [Validators.required]],
       views: ['', [Validators.required]],
+      image: ['', [Validators.required]],
     })
     this.addUser = this.fb.group({
       username: ['', [Validators.required, Validators.minLength(3)]],
@@ -51,6 +52,9 @@ export class AddStory {
   }
    get views() {
     return this.addProduct.get('views');
+  }
+  get image() {
+    return this.addProduct.get('image');
   }
   get username() {
     return this.addUser.get('username');

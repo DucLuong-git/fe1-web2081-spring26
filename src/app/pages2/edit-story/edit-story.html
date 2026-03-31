@@ -1,0 +1,80 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <form [formGroup]="editForm" (ngSubmit)="submitForm()"
+        class="bg-white p-6 rounded-xl shadow-md w-full max-w-sm space-y-4">
+        <h2 class="text-xl font-semibold text-center">
+            sửa truyện
+        </h2>
+        <div>
+            <label class="block mb-1 text-sm">Tên sp</label>
+            <input type="text" formControlName="name"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tên product" />
+                @if ( name?.invalid) {
+                    @if (name?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+
+        <div>
+            <label class="block mb-1 text-sm">price</label>
+            <input type="number" formControlName="price"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập price" />
+                @if (price?.invalid) {
+                    @if (price?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">author</label>
+            <input type="text" formControlName="author"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập tên product" />
+                @if ( author?.invalid) {
+                    @if (author?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">views</label>
+            <input type="number" formControlName="views"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập số view" />
+                @if ( views?.invalid) {
+                    @if (views?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">image</label>
+            <input type="text" formControlName="image"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="Nhập link ảnh" />
+                @if ( image?.invalid) {
+                    @if (image?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <div>
+            <label class="block mb-1 text-sm">category</label>
+            <input type="text" formControlName="category"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder="category" />
+                @if ( category?.invalid) {
+                    @if (category?.errors?.['required']) {
+                        <p class="text-red-500 text-sm">Không được để trống</p>
+                    }
+                }
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+            sửa
+        </button>
+            
+    </form>
+
+</div>

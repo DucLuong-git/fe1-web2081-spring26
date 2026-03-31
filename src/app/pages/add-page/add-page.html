@@ -1,0 +1,68 @@
+<div class="p-6">
+  <h1 class="text-2xl font-semibold mb-6">Thêm mới</h1>
+
+  <form [formGroup]="addBook" (submit)="submitBook()" class="space-y-6">
+    <div>
+      <label htmlFor="text" class="block font-medium mb-1"> title </label>
+      <input
+        type="text"
+        id="title"
+        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        formControlName="title"
+      />
+      @if(title?.invalid && title?.touched){
+        @if(title?.errors?.['required']){
+          <p class="text-red-500">không đc để trống</p>
+        }
+      }
+    </div>
+    <div>
+      <label htmlFor="text" class="block font-medium mb-1"> quantity </label>
+      <input
+        type="number"
+        id="quantity"
+        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        formControlName="quantity"
+      />
+      @if(quantity?.invalid && quantity?.touched){
+        @if(quantity?.errors?.['required']){
+          <p class="text-red-500">không đc để trống</p>
+        }
+      }
+    </div>
+    <div>
+      <label htmlFor="text" class="block font-medium mb-1"> coverImage </label>
+      <input
+        type="text"
+        id="coverImage"
+        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        formControlName="coverImage"
+      />
+      @if(coverImage?.invalid){
+        @if(coverImage?.errors?.['required']){
+          <p class="text-red-500">không đc để trống</p>
+        }
+        
+      }
+    </div>
+    <div>
+      <label htmlFor="text" class="block font-medium mb-1"> genre</label>
+      <input
+        type="text"
+        id="genre"
+        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        formControlName="genre"
+      />
+      @if(genre?.invalid && genre?.touched){
+        <p class="text-red-500">không đc để trống</p>
+      }
+    </div>
+
+    <button
+      type="submit"
+      class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+    >
+      Submit
+    </button>
+  </form>
+</div>

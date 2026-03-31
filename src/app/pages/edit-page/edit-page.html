@@ -1,0 +1,58 @@
+<div class="p-6">
+  <h1 class="text-2xl font-semibold mb-6">Sửa sách</h1>
+
+  <form [formGroup]="editbook" (ngSubmit)="submitForm()" class="space-y-6">
+    <div>
+      <label class="block font-medium mb-1">Title</label>
+      <input
+        type="text"
+        formControlName="title"
+        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500"
+      />
+      @if(title?.invalid && title?.touched){
+        <p class="text-red-500">Không được để trống</p>
+      }
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Quantity</label>
+      <input
+        type="number"
+        formControlName="quantity"
+        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500"
+      />
+      @if(quantity?.invalid && quantity?.touched){
+        <p class="text-red-500">Không được để trống</p>
+      }
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Cover Image</label>
+      <input
+        type="text"
+        formControlName="coverImage"
+        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500"
+      />
+      @if(coverImage?.invalid && coverImage?.touched){
+        <p class="text-red-500">Không được để trống</p>
+      }
+    </div>
+    <div>
+      <label class="block font-medium mb-1">Genre</label>
+      <input
+        type="text"
+        formControlName="genre"
+        class="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500"
+      />
+      @if(genre?.invalid && genre?.touched){
+        <p class="text-red-500">Không được để trống</p>
+      }
+    </div>
+
+    <button
+      type="submit"
+      class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+    >
+      Cập nhật
+    </button>
+
+  </form>
+</div>

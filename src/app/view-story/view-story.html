@@ -58,13 +58,14 @@
         >
           thêm
       </a>
-        <button
-          
-          class="border-2 px-3 py-1 hover:bg-amber-300 rounded-xl"
+        <a
+        [routerLink]="['/EditStory', story.id]"
+        class="border-2 px-3 py-1 hover:bg-amber-300 rounded-xl"
         >
           sửa
-        </button>
+      </a>
         <button
+          routerLinkActive="active"
           (click)="DeleteStory(story.id)"
           class="border-2 px-3 py-1 hover:bg-red-300 rounded-xl"
         >
